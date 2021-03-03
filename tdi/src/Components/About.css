@@ -1,0 +1,86 @@
+.aboutDiv {
+  font-family: "Share Tech Mono", monospace;
+  color: #fff;
+  font-size: 4vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutDiv::before, .aboutDiv::after {
+  content: "";
+  display: block;
+  height: 0.09em;
+  min-width: 30vw;
+}
+
+.aboutDiv::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(240, 240, 240, 0)), to(#fff));
+  background: linear-gradient(to right, rgba(240, 240, 240, 0), #fff);
+  margin-right: 2vh;
+}
+
+.aboutDiv::after {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(240, 240, 240, 0)), to(#fff));
+  background: linear-gradient(to left, rgba(240, 240, 240, 0), #fff);
+  margin-left: 2vh;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 20px;
+  text-align: center;
+}
+
+.MuiDivider-root {
+  height: 10px !important;
+}
+
+.aboutParagraph {
+  text-align: center;
+  font-size: 1rem !important;
+}
+
+.aboutParagraphType {
+  text-align: center;
+  font-size: 1.25rem !important;
+  color: #ff5953;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutParagraph {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aboutParagraph {
+    font-size: 2rem !important;
+  }
+  .aboutParagraphType {
+    font-size: 2.25rem !important;
+  }
+}
+/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,22 @@
+.logoContainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  margin-top: 20px;
+  /* object-fit: cover; */
+  height: 100%;
+  width: 50%;
+  /* flex-grow: 1; */
+}
+
+/* shrink logo on smaller devices */
+@media only screen and (max-width: 600px) {
+  .logoImg {
+    margin-top: 0px !important;
+    width: 95%;
+  }
+}

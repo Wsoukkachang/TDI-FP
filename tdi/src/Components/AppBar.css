@@ -1,0 +1,32 @@
+/* .appBar {
+  height: 64px;
+} */
+
+/* contact button in NavBar */
+.MuiButton-root {
+  font-size: 0.8rem !important;
+}
+
+/* NavBar width */
+.MuiAppBar-root {
+  width: 100vw !important;
+}
+
+.MuiSvgIcon-colorSecondary {
+  color: #e91710 !important;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  width: 100px;
+}
+
+/* shrink logo on smaller devices */
+
+/* @media only screen and (max-width: 600px) {
+  .appBar {
+    height: 50px;
+  }
+} */

@@ -1,0 +1,71 @@
+.aboutDiv {
+  font-family: "Share Tech Mono", monospace;
+  color: #fff;
+  font-size: 4vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+
+  &::before {
+    background: linear-gradient(to right, rgba(240, 240, 240, 0), #fff);
+    margin-right: 2vh;
+  }
+
+  &::after {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0), #fff);
+    margin-left: 2vh;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  margin: 20px;
+  text-align: center;
+}
+
+.MuiDivider-root {
+  height: 10px !important;
+}
+
+.aboutParagraph {
+  text-align: center;
+  font-size: 1rem !important;
+}
+
+.aboutParagraphType {
+  text-align: center;
+  font-size: 1.25rem !important;
+  color: rgb(255, 89, 83);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutParagraph {
+    font-size: 1rem !important;
+  }
+}
+
+// about us font size gets bigger on larger screens
+@media only screen and (min-width: 1200px) {
+  .aboutParagraph {
+    font-size: 2rem !important;
+  }
+
+  .aboutParagraphType {
+    font-size: 2.25rem !important;
+  }
+}
