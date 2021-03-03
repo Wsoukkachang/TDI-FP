@@ -81,16 +81,16 @@ function App(props) {
       <ReactFullpage
         //fullpage options
         autoScrolling={true}
-        navigation={true}
+        navigation={false}
         anchors={["section1", "section2", "section3", "section4"]}
-        navigationTooltips={["About Us", "Gallery", "Wind Map", "Contact"]}
+        navigationTooltips={["Landing", "About Us", "Gallery", "Wind Map"]}
         showActiveTooltip={true}
         scrollingSpeed={1000}
         controlArrows={true}
         animateAnchor={false}
-        paddingTop={"25px"}
-        verticalCentered={false}
-        slidesNavigation={true}
+        // paddingTop={"25px"}
+        verticalCentered={true}
+        slidesNavigation={false}
         menu={".navBar"}
         // fixedElements={ButtonAppBar - fixed - top}
         licenseKey={"YOUR_KEY_HERE"}
@@ -117,33 +117,35 @@ function App(props) {
               </div>
 
               <div className="section">
+                <h1>Gallery</h1>
                 <Gallery />
               </div>
 
               <div className="section">
-                <LazyLoad height={200} offset={100}>
-                  <SiteMap center={mapCenter} zoom={mapZoom} />
-                </LazyLoad>
-              </div>
+                <div className="center">
+                  <h1>Wind Map</h1>
+                  <LazyLoad height={200} offset={100}>
+                    <SiteMap center={mapCenter} zoom={mapZoom} />
+                  </LazyLoad>
 
-              <div className="section">
-                <LazyLoad height={200} offset={100}>
-                  <Element name="test=3" className="element">
-                    <Footer />
-                  </Element>
-                </LazyLoad>
+                  <LazyLoad height={200} offset={100}>
+                    <Element name="test=3" className="element">
+                      <Footer />
+                    </Element>
+                  </LazyLoad>
 
-                <LazyLoad height={200} offset={100}>
-                  <ScrollTop {...props}>
-                    <Fab
-                      color="secondary"
-                      size="small"
-                      aria-label="scroll back to top"
-                    >
-                      <KeyboardArrowUpIcon />
-                    </Fab>
-                  </ScrollTop>
-                </LazyLoad>
+                  <LazyLoad height={200} offset={100}>
+                    <ScrollTop {...props}>
+                      <Fab
+                        color="secondary"
+                        size="small"
+                        aria-label="scroll back to top"
+                      >
+                        <KeyboardArrowUpIcon />
+                      </Fab>
+                    </ScrollTop>
+                  </LazyLoad>
+                </div>
               </div>
             </ReactFullpage.Wrapper>
           );

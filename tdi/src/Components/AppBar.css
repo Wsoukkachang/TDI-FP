@@ -16,7 +16,7 @@
   color: #e91710 !important;
 }
 
-.icon-row {
+.icon-row .icon-row {
   display: flex;
   flex-direction: row !important;
   justify-content: space-around !important;

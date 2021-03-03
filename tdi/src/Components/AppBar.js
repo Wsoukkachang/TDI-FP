@@ -140,16 +140,17 @@ export default function ButtonAppBar() {
           >
             <MenuItem>
               <Link
+                data-menuanchor="section2"
                 activeClass="active"
-                className="test1"
-                to="test1"
+                // className="test1"
+                // to="test1"
                 spy={true}
                 smooth={true}
                 isDynamic={true}
                 duration={500}
                 onClick={handleClose}
               >
-                About Us
+                <a href="#section2">About Us</a>
               </Link>
             </MenuItem>
 
